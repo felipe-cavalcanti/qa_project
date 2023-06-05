@@ -1,0 +1,8 @@
+{
+  "testUser": "testuser",
+  "password": "pl123",
+  "incorrectPassword": "1234",
+  "incorrectUser": "user",
+  "specialCharacters": "##!@^~/",
+  "randomLettersAndNumbers": "Test012345"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "venturus_qa_challenge",
+  "version": "1.0.0",
+  "description": "This is a repository meant to store all automation code, test plan and documentation regarding Venturus QA hiring process",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --env allure=true",
+    "cy:open": "cypress open",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+  },
+  "author": "Luis Felipe Cavalcanti de Amorim <felipe.cavalcanty5@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.39.1",
+    "cypress": "^12.13.0"
+  }
+}
